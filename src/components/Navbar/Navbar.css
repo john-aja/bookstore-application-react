@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney&display=swap");
+
+nav {
+	color: var(--text-color-primary-blue);
+}
+
+nav ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+nav li:nth-child(2) {
+	font-family: "Tourney", sans-serif;
+	font-size: 48px;
+}
+
+nav li {
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	color: var(--text-color-primary-blue);
+	font-weight: 400;
+}

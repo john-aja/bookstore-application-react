@@ -1,0 +1,57 @@
+.popup-details {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem;
+	align-items: center;
+	width: 100%;
+}
+
+.popup-details img {
+	width: 20rem;
+}
+
+.popup-book-details {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.popup-book-details h2 {
+	color: var(--text-color-blue);
+}
+.popup-book-details .description {
+	color: var(--text-color-primary-blue);
+}
+
+.popup-book-details .author,
+.popup-book-details .genre {
+	color: var(--text-color-gray);
+}
+
+.popup-book-info {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.popup-book-details button {
+	margin-top: 1.5rem;
+}
+
+.close-btn {
+	font-size: 3rem;
+	color: rgb(255, 55, 20);
+	position: absolute;
+	right: 1rem;
+	top: 0rem;
+	cursor: pointer;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.234);
+	transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+	transform: translateY(2px);
+}
