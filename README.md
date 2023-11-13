@@ -39,8 +39,8 @@ Make sure you have the following installed on your machine:
 
 Now that you have the project and dependencies installed, you can run the application.
 
-    ```bash
-    npm run start
+   ```bash
+   npm run install
 
 This will start the development server, and you can view the application in your web browser at http://localhost:3000.
 
