@@ -18,8 +18,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository to your local machine.
 
    ```bash
-   git clone https://github.com/your-username/react-bookstore.git
-
+   git clone https://github.com/john-aja/bookstore-application-react.git
 
 2. Navigate to the project directory.
    
@@ -31,7 +30,6 @@ Make sure you have the following installed on your machine:
    ```bash
    npm install
 
-
 Now that you have the project and dependencies installed, you can run the application.
 
 4. Running the Application
@@ -40,7 +38,6 @@ Now that you have the project and dependencies installed, you can run the applic
    npm run start
    
 This will start the development server, and you can view the application in your web browser at http://localhost:3000.
-
 
 ## Contact
 
