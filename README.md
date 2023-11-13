@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Bookstore Application - React
 
 Welcome to the Bookstore application! This application allows you to manage a bookstore with features like browsing books, viewing details, and managing a shopping cart.
