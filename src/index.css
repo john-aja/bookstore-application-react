@@ -13,6 +13,7 @@
 	--text-color-white: white;
 	--bg-blue-primary: #0748c5;
 	--bg-blue-secondary: #90caff;
+	--bg-blue-main: #e0fbff;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: #e0fbff;
+	background: var(--bg-blue-main);
 	font-family: "Lexend", sans-serif;
 	height: 100vh;
 	overflow: hidden;

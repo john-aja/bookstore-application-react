@@ -7,9 +7,20 @@ import BookView from "../BookView/BookView";
 const Books: React.FC = () => {
 	const [selectedBook, setSelectedBook] = useState(null);
 	const [BookPopup, setBookView] = useState(false);
+	const [allBooks, setAllBooks] = useState(BooksArray);
+
+	const filterBooksByAuthor = (author: any) => {
+		if (author.length) {
+			const filteredBooks = BooksArray.filter((book) =>
+				book.author.toLowerCase().includes(author.toLowerCase()),
+			);
+			setAllBooks(filteredBooks);
+		} else {
+			setAllBooks(BooksArray);
+		}
+	};
 
 	const openPopup = (book: any) => {
-		console.log(book);
 		setSelectedBook(book);
 		setBookView(true);
 	};
@@ -20,9 +31,33 @@ const Books: React.FC = () => {
 	};
 
 	const addToCart = (book: any) => {
-		// Implement the logic to add the book to the cart
-		console.log("Adding to cart:", book.title);
-		closePopup(); // Close the popup after adding to the cart (you can modify this behavior)
+		const addedItem = localStorage.getItem("addedBooks");
+		book.quantity = 1;
+		let arr = [{ ...book }];
+		if (addedItem) {
+			const books = JSON.parse(addedItem);
+			books.filter((v: any) => {
+				arr.push(v);
+				return arr;
+			});
+		} else {
+			arr.push(book);
+		}
+		arr = arr.filter(
+			(obj, index, self) =>
+				index === self.findIndex((o) => o.title === obj.title),
+		);
+		localStorage.setItem("addedBooks", JSON.stringify(arr));
+		closePopup();
+	};
+
+	const getGenre = (event: any) => {
+		if (event !== "") {
+			const filteredBooks = BooksArray.filter((v) => v.genre === event);
+			setAllBooks(filteredBooks);
+		} else {
+			setAllBooks(BooksArray);
+		}
 	};
 
 	return (
@@ -37,21 +72,28 @@ const Books: React.FC = () => {
 					name=""
 					id="search-field"
 					placeholder="Search by author name..."
+					onChange={(e) => filterBooksByAuthor(e.target.value)}
 				/>
-				<select name="" id="">
-					<option value="" selected>
+				<select
+					onChange={(value) => getGenre(value.target.value)}
+					name=""
+					id=""
+				>
+					<option value="" defaultValue={""}>
 						Select genre
 					</option>
-					<option value="">Fiction</option>
-					<option value="">Non-Fiction</option>
-					<option value="">Biography</option>
-					<option value="">Education</option>
-					<option value="">Self Help</option>
+					<option value="Fiction">Fiction</option>
+					<option value="Romance">Romance</option>
+					<option value="Realism">Realism</option>
+					<option value="Fantasy">Fantasy</option>
+					<option value="Adventure">Adventure</option>
+					<option value="Poetry">Poetry</option>
+					<option value="Education">Education</option>
 				</select>
 			</div>
 			<div className="available-books">
 				<div className="book-container">
-					{BooksArray.map((book, index) => (
+					{allBooks.map((book, index) => (
 						<div
 							key={index}
 							className="book-card"
@@ -61,10 +103,13 @@ const Books: React.FC = () => {
 							<div className="book-details">
 								<div className="book-info">
 									<h3>{book.title}</h3>
-									<p>Author: {book.author}</p>
+									<p>{book.author}</p>
 								</div>
 								<div className="book-price">
-									<h2>$11.00</h2>
+									<h2>
+										{book.currency}
+										{book.price}.00
+									</h2>
 								</div>
 								{/* <p>Genre: {book.genre}</p> */}
 								{/* <p>{book.description}</p> */}

@@ -33,7 +33,7 @@ h1 span {
 	font-weight: 600;
 }
 
-button {
+.home-page-container button {
 	width: fit-content;
 	padding: 1rem 2rem;
 	font-size: 20px;
@@ -45,12 +45,12 @@ button {
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
-button:hover {
+.home-page-container button:hover {
 	box-shadow: none;
 	transform: translateY(1px);
 }
 
-button a {
+.home-page-container button a {
 	text-decoration: none;
 	color: var(--text-color-white);
 }

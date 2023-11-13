@@ -3,6 +3,8 @@ const BooksArray = [
 		title: "To Kill a Mockingbird",
 		author: "Harper Lee",
 		genre: "Fiction",
+		price: 11,
+		currency: "$",
 		imgUrl:
 			"https://epqkkxb65h3.exactdn.com/wp-content/uploads/2023/02/m-2908.jpg?strip=all&lossy=1&resize=430%2C600&ssl=1",
 		description:
@@ -11,7 +13,9 @@ const BooksArray = [
 	{
 		title: "1984",
 		author: "George Orwell",
-		genre: "Dystopian Fiction",
+		genre: "Fiction",
+		price: 14,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/71NvkZxn-fL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -20,7 +24,9 @@ const BooksArray = [
 	{
 		title: "The Great Gatsby",
 		author: "F. Scott Fitzgerald",
-		genre: "Classic Fiction",
+		genre: "Fiction",
+		price: 8,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/71FTb9X6wsL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -29,7 +35,9 @@ const BooksArray = [
 	{
 		title: "The Catcher in the Rye",
 		author: "J.D. Salinger",
-		genre: "Coming-of-Age Fiction",
+		genre: "Fiction",
+		price: 18,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/814ZhvhJ-bL._AC_UF894,1000_QL80_.jpg",
 		description:
@@ -39,6 +47,8 @@ const BooksArray = [
 		title: "Pride and Prejudice",
 		author: "Jane Austen",
 		genre: "Romance",
+		price: 21,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/M/MV5BMDM0MjFlOGYtNTg2ZC00MmRkLTg5OTQtM2U5ZjUyYTgxZThiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
 		description:
@@ -47,7 +57,9 @@ const BooksArray = [
 	{
 		title: "One Hundred Years of Solitude",
 		author: "Gabriel García Márquez",
-		genre: "Magical Realism",
+		price: 19,
+		currency: "$",
+		genre: "Realism",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/71IWwBoDNsL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -57,7 +69,9 @@ const BooksArray = [
 	{
 		title: "Brave New World",
 		author: "Aldous Huxley",
-		genre: "Dystopian Fiction",
+		genre: "Fiction",
+		price: 31,
+		currency: "$",
 		imgUrl:
 			"https://www.literaryretreat.com/wp-content/uploads/2018/02/Brave-New-World-Cover.jpg",
 		description:
@@ -69,6 +83,8 @@ const BooksArray = [
 		imgUrl:
 			"https://m.media-amazon.com/images/I/A1E+USP9f8L._AC_UF1000,1000_QL80_.jpg",
 		genre: "Fantasy",
+		price: 15,
+		currency: "$",
 		description:
 			'J.R.R. Tolkien’s "The Hobbit" takes readers on an epic journey through Middle-earth. The story follows Bilbo Baggins, a hobbit who reluctantly embarks on an adventure to reclaim a treasure guarded by the fearsome dragon Smaug. Along the way, Bilbo encounters elves, dwarves, and the mysterious Gollum. Tolkien’s richly imagined world, filled with magic and mythical creatures, has captivated readers of all ages for generations.',
 	},
@@ -76,6 +92,8 @@ const BooksArray = [
 		title: "Moby-Dick",
 		author: "Herman Melville",
 		genre: "Adventure",
+		price: 7,
+		currency: "$",
 		imgUrl:
 			"https://rukminim1.flixcart.com/image/850/1000/xif0q/book/a/a/z/moby-dick-original-imagrvh8brprpsnj.jpeg?q=90",
 		description:
@@ -84,6 +102,8 @@ const BooksArray = [
 	{
 		title: "The Lord of the Rings",
 		author: "J.R.R. Tolkien",
+		price: 28,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/71VjmMcE-rL._AC_UF894,1000_QL80_.jpg",
 		genre: "Fantasy",
@@ -93,7 +113,9 @@ const BooksArray = [
 	{
 		title: "Jane Eyre",
 		author: "Charlotte Brontë",
-		genre: "Gothic Fiction",
+		genre: "Fiction",
+		price: 14,
+		currency: "$",
 		imgUrl:
 			"https://cdn.kobo.com/book-images/df8380db-fd22-49b6-ad29-97ba56a5d7f6/1200/1200/False/jane-eyre-351.jpg",
 		description:
@@ -102,7 +124,9 @@ const BooksArray = [
 	{
 		title: "Crime and Punishment",
 		author: "Fyodor Dostoevsky",
-		genre: "Psychological Fiction",
+		genre: "Fiction",
+		price: 10,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/81qk21S0qVL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -111,7 +135,9 @@ const BooksArray = [
 	{
 		title: "The Odyssey",
 		author: "Homer",
-		genre: "Epic Poetry",
+		genre: "Poetry",
+		price: 19,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/71u+5QX1+DL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -120,7 +146,9 @@ const BooksArray = [
 	{
 		title: "Wuthering Heights",
 		author: "Emily Brontë",
-		genre: "Gothic Fiction",
+		genre: "Fiction",
+		price: 22,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/81dvA4tU0rL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -131,6 +159,8 @@ const BooksArray = [
 		title: "Code Complete",
 		author: "Steve McConnell",
 		genre: "Education",
+		price: 21,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/81Y8Ay0WWCL._AC_UF1000,1000_QL80_.jpg",
 		description:
@@ -139,7 +169,9 @@ const BooksArray = [
 	{
 		title: "One Hundred Years of Solitude",
 		author: "Gabriel García Márquez",
-		genre: "Magical Realism",
+		genre: "Realism",
+		price: 42,
+		currency: "$",
 		imgUrl:
 			"https://m.media-amazon.com/images/I/71IWwBoDNsL._AC_UF1000,1000_QL80_.jpg",
 		description:
